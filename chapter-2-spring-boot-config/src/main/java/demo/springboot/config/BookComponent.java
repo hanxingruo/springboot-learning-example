@@ -9,7 +9,8 @@ import javax.validation.constraints.NotNull;
 
 /**
  * 书属性
- *
+ *  通过 @ConfigurationProperties(prefix = "home”) 注解，将配置文件中以 home 前缀的属性值自动绑定到对应的字段中。
+ *  同是用 @Component 作为 Bean 注入到 Spring 容器中。
  */
 @Component
 @ConfigurationProperties(prefix = "demo.book")
